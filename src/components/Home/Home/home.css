@@ -1,0 +1,67 @@
+ html{
+    min-height: 100%;
+  
+    
+  } 
+  
+  
+  /* body{
+    height: calc(100vh - 8em);
+    padding: 4em;
+    color: rgba(255,255,255,.75);
+    
+  } */
+  
+  .line-1{
+      font-size: 180%;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+  
+  
+  /* Animation */
+  .anim-typewriter{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 15em;}
+  }
+  .full-stack{
+    animation-delay: 4s;
+  }
+  .developing{
+    animation-delay: 7s;
+  }
+  /* .banner-image{
+    background-image: url('/as');
+  } */
+  
+  
+  /* li{
+    margin-bottom: 10px !important;
+    
+  }
+  
+  .cool-link {
+    display: inline-block !important ;
+    color: white !important ;
+    text-decoration: none ;
+  }
+  
+  .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orangered ;
+    transition: width .3s;
+  }
+  
+  .cool-link:hover::after {
+    width: 100% ;
+    transition: width .3s;
+  }
+   */

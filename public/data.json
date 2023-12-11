@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "name": "Book Catalog",
+        "image": "https://i.ibb.co/FqPgZqB/Screenshot-40.png",
+        "link": "https://vermillion-bonbon-a2823d.netlify.app/",
+        "clientCode": "https://github.com/imam-hossain1/book-catalog-client",
+        "serverCode": "https://github.com/imam-hossain1/book-catalog-server",
+        "tools": "React , Redux , Typescript , Mongodb , ExpressJS",
+        "description": "On this website, there are 3 private routes for admin, seller, and buyer. Anyone can’t see others dashboard info. It’s a full-stack web application. There is applying stripe payment method and firebase authentication, sign in, signup functionality, and used MongoDB for storing user’s data. On this website, sellers can sell their products and buyer can buy products using stripe payment and admins can perform admin functionality using the admins dashboard"
+    },
+    {
+        "id": "2",
+        "name": "Resale Zone",
+        "image": "https://i.ibb.co/wyhk6DT/Screenshot-41.png",
+        "link": "https://vermillion-bonbon-a2823d.netlify.app/",
+        "clientCode": "https://github.com/imam-hossain1/resale-product-client",
+        "serverCode": "https://github.com/imam-hossain1/resale-product-server",
+        "tools": "React , Redux , NodeJS ,Jwt, Stripe, Mongodb , ExpressJS",
+        "description": "A mobile resale market with Admin, seller & buyer panel. Admin, seller, and buyer can manage their products, orders, report and other stuffs. Authenticate seller can sell mobiles phone and buyer can buy Mobile phones and Admin maintenance whole website. This website is full secure with jwt and firebase authentication. There are login, register, protector routes as well as Payment integrated with Stripe. Admin can see all buyer, seller and delete as well as update. There is another role of super admin. Super admin delete all user."
+    },
+    {
+        "id": "3",
+        "name": "Just Tech",
+        "image": "https://i.ibb.co/1vzSC0k/Screenshot-42.png",
+        "link": "https://just-tech-10.web.app/",
+        "clientCode": "https://github.com/imam-hossain1/book-catalog-client",
+        "serverCode": "https://github.com/imam-hossain1/learning-platform-server-site",
+        "description": "This is a responsive online course selling website .There are many online programming language courses available in this website. There is a categories section in this website. User can purcheses courses their own choice.Some page user cannot access without login. very secure and responsive single page web application"
+    },
+    {
+        "id": "4",
+        "name": "Travel Zone",
+        "image": "https://i.ibb.co/QjmsP3t/Screenshot-43.png",
+        "link": "https://service-review-assignmen-54e53.web.app/",
+        "clientCode": "https://github.com/imam-hossain1/service-review-client-side",
+        "serverCode": "https://github.com/imam-hossain1/-b6a11-service-review-server-side",
+        "description": "This is a travelling website around in Bangladesh . This website provides tour around in bangaldesh . A Tourist easily booking tricket from this website. A very secure and fully responsive website .Before booking a sit user have to login without login user cannot book site"
+    },
+    {
+        "id": "5",
+        "name": "News King",
+        "image": "https://i.ibb.co/MGSgmxf/Screenshot-52.png",
+        "link": "https://stellar-pika-0b338d.netlify.app/index.html#",
+        "clientCode": "https://github.com/Programming-Hero-Web-Course4/b6-news-portal-assignment-imam-hossain1",
+        "serverCode": "https://github.com/imam-hossain1/-b6a11-service-review-server-side",
+        "description": "News king website provides all king to international news .there are many categories news. This website full responsive and firebase attentication.There are login register page in this website"
+    },
+    {
+        "id": "6",
+        "name": "Quiz Crackerz",
+        "image1": "https://i.ibb.co/Lkk0Zwx/Screenshot-50.png",
+        "image": "https://i.ibb.co/k6JgD5J/Screenshot-49.png",
+        "link": "https://stately-piroshki-dfd2d7.netlify.app/home",
+        "clientCode": "https://github.com/Programming-Hero-Web-Course4/b6-ultra-active-club-imam-hossain1",
+        "description": "Quiz creackerz website provides programming language quiz. Learner can practise their programming language and see result"
+    },
+    {
+        "id": "7",
+        "name": "Master Pro",
+        "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
+        "link": "https://imam-hossain1.github.io/my-third-project/",
+        "clientCode": "https://github.com/imam-hossain1/my-third-project"
+    }
+]
