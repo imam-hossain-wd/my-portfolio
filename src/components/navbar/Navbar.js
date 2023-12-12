@@ -2,7 +2,7 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import "./nav.css";
 import logo from "../../assets/images/coding.jpg";
-import { FaPhoneSquare} from "react-icons/fa";
+import Drawer from "./Drawer";
 
 const Navbar = () => {
   const navmenu = (
@@ -32,16 +32,16 @@ const Navbar = () => {
           contact
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link className="cool-link text-[16px]" smooth to="#contact">
           Hire Me
         </Link>
-      </li>
+      </li> */}
     </>
   );
   return (
     <section className="">
-      <div className="w-full navbar bg-transparent fixed top-0 z-50">
+      <div className="w-full navbar bg-gray-900 fixed top-0 z-50">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -77,7 +77,10 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 mt-2">{navmenu}</ul>
         </div>
-        <button className="btn btn-sm text-white capitalize hover:text-rose-600"><span className="text-xl"><FaPhoneSquare/></span> Call Now</button>
+
+       <div>
+       <Drawer />
+       </div>
       </div>
     </section>
   );

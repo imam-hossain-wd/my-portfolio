@@ -1,21 +1,28 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+// import React, { useRef } from 'react';
+// import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import ContactForm from './ContactForm';
+// import ContactForm from './ContactForm';
+
 
 const Contact = () => {
 
-    const form = useRef();
+//     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+//   const sendEmail = (e) => {
+//     e.preventDefault();
+   
 
-    emailjs.sendForm('service_ui7qfhs', 'template_msue0rc', form.current, 'wfwXYdRYM4QGmPWnk')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+//     emailjs.sendForm('service_ui7qfhs', 'template_msue0rc', form.current, 'wfwXYdRYM4QGmPWnk')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   };
+
+
+ 
 
     return (
         <section id="contact" className='my-10'>
@@ -51,27 +58,10 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form ref={form} onSubmit={sendEmail} style={{ backgroundColor: "#1B2436" }} className='w-full lg:w-[500px] rounded-lg p-5 text-white mt-5'>
-
-                    <label>
-                        <p className='mb-2'>Name</p>
-                        <input type="text" placeholder="Enter Name" className="input w-full bg-white text-black " />
-                    </label>
-                    <label>
-                        <p className='mb-2'>Email</p>
-                        <input type="text" placeholder="Enter Email" className="input bg-white   input-ghost w-full text-black " />
-                    </label>
-                    <label>
-                        <p className='mb-2'>Subject</p>
-                        <input type="text" placeholder="Enter Subject" className="input bg-white input-ghost w-full text-black " />
-                    </label>
-                    <label>
-                        <p className='mb-2'>Message</p>
-                        <textarea className="textarea bg-white textarea-ghost w-full text-black" placeholder="Enter Message"></textarea>
-                    </label>
-                    <button className='btn bg-rose-500 border-0  text-white w-40 mt-2'>Send</button>
-                   
-                </form>
+               
+              <div className='w-full lg:w-[600px]'>
+              <ContactForm size="100%" />
+              </div>
             </div>
 
         </section>
