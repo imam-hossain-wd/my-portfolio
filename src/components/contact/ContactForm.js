@@ -51,9 +51,12 @@ const ContactForm = ({size}) => {
         ></textarea>
       </label>
      <div>
-     <button style={buttonStyle} className={`btn bg-rose-500 border-0  text-white  mt-2`}>
+     {/* <button style={buttonStyle} className={`btn bg-rose-500 border-0  text-white  mt-2`}>
         Send
-      </button>
+      </button> */}
+      <div className='flex justify-center mt-3'>
+      <button style={buttonStyle}  className="cool-link w-48 border border-white h-10 text-white rounded-sm text-white fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform" >Submit</button>
+      </div>
      </div>
     </form>
      

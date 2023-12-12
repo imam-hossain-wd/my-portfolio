@@ -35,9 +35,12 @@ const AboutMe = () => {
                         Explore my portfolio to witness my creativity and problem-solving in action. Let's team up to turn your ideas into exceptional digital realities!
 
                     </p>
-                    <button className="btn bg-green-400 rounded-full w-44 border-0 btn-outline w-60 mb-3 mt-10 text-white hover:bg-white">
+                    {/* <button className="btn bg-green-400 rounded-full w-44 border-0 btn-outline w-60 mb-3 mt-10 text-white hover:bg-white">
                         <Link to="#contact">Talk With me</Link>
-                    </button>
+                    </button> */}
+                      <div className='flex justify-center mt-5'>
+      <button  className="cool-link w-48 border border-white h-10 text-white rounded-sm text-white fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"><Link to="#contact">Talk With me</Link></button>
+      </div>
                 </div>
             </div>
         </section>

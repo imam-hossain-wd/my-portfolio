@@ -78,7 +78,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 mt-2">{navmenu}</ul>
         </div>
 
-       <div>
+       <div className="ml-28">
        <Drawer />
        </div>
       </div>

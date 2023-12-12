@@ -60,7 +60,7 @@ const Contact = () => {
                 </div>
                
               <div className='w-full lg:w-[600px]'>
-              <ContactForm size="100%" />
+              <ContactForm size="200px" />
               </div>
             </div>
 
