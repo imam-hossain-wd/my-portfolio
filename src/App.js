@@ -3,7 +3,7 @@ import MainHome from "./components/Home/MainHome/MainHome";
 
 function App() {
   return (
-    <section className="w-[96%] mx-auto" >
+    <section className="w-full lg:w-[96%] mx-auto" >
       <BrowserRouter >
       <MainHome />
       </BrowserRouter>

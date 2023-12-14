@@ -17,7 +17,7 @@ const Home = () => {
 
       <section id="home" className="flex flex-col-reverse md:flex-col-reverse lg:flex-row justify-around lg:items-center w-[85%] mx-auto"
       >
-        <div className="mt-20 p-5">
+        <div className="mt-10">
           <h3 className="mb-5 text-xl text-white italic">Hello , I'm</h3>
 
           <p className="line-1 anim-typewriter text-white text-4xl italic">Imam Hossain</p>
@@ -51,7 +51,7 @@ const Home = () => {
     
          </div>
 
-          <div className="mt-5 flex flex-col lg:flex-row">
+          <div className="-mt-7 flex flex-col items-center lg:flex-row">
             {/* <button className=" border-white py-2 px-3 rounded-sm text-white  fond-semi-bold hover:text-white hover:border-0 hover:m-[1px] transition delay-150 transform ">
 
               <Link to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing">Download Resume</Link>
@@ -65,7 +65,7 @@ const Home = () => {
           style={{ width: "170px" }}>
             <Link className='text-white' to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing">Download CV</Link>
           </button>
-                 <button  className="cool-link border border-white h-10 text-white hover:border-rose-500 rounded-sm text-white  fond-semi-bold  hover:border-0 mb-2  transition delay-150 transform"
+                 <button  className="cool-link -ml-2 lg:-ml-0 border border-white h-10 text-white hover:border-rose-500 rounded-sm text-white  fond-semi-bold  hover:border-0 mb-2  transition delay-150 transform"
           style={{ width: "170px" }}>
             <Link className='text-white' to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing">Talk With me</Link>
           </button>
@@ -84,7 +84,7 @@ const Home = () => {
         <div className="background-image">
           <img
             src={image1}
-            className="w-[300px] h-[300px] rounded banner-image rounded-full"
+            className="mt-10 lg:mt-0 w-[300px] h-[300px] rounded banner-image rounded-full"
             alt=""
           />
         </div>
@@ -122,9 +122,9 @@ const Home = () => {
         </div>
 
       </section>
-      <div className='flex justify-center items-center text-md hover:text-indigo-500'>
-        <p className='text-white animate-bounce mt-2 hover:text-indigo-500'><Link smooth to="#welcome"><FaArrowDown /></Link></p>
-        <p className='ml-3 '><Link className='text-white' smooth to="#welcome">Scroll Down</Link></p>
+      <div className='flex  text-lg justify-center mt-8 items-center text-md '>
+          <Link className='text-white mr-2 -mt-2 hover:text-indigo-500' smooth to="#welcome">Scroll Down</Link>
+          <Link className='text-white  animate-bounce hover:text-indigo-500' smooth to="#welcome"><FaArrowDown /></Link>
       </div>
     </div>
   );

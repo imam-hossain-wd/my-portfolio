@@ -9,9 +9,9 @@ const Services = () => {
           <p className="text-center text-xl mb-5">See my following web design and development services <br/> that I am offering you</p>
         </div>
 
-       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 w-[95%] mx-auto gap-5">
+       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[95%] mx-auto gap-5">
 
-        <div className="bg-black text-white p-10  rounded-lg w-80 h-[340px] text-center  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 mb-5">
+        <div className="bg-black text-white p-10  rounded-lg w-80 lg:w-80 h-[340px] text-center  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
           <p><i className="fa-solid fa-code text-5xl text-white mb-2 -mt-5"></i></p>
           <h1 className="text-3xl font-bold mb-2">Web Design</h1>
           <p className="text-lg">Beautiful website using <br/>Tailwind,JavaScript, Typescript ,ReactJs , <br/>NextJs ,ReduxJs  JavaScript</p>

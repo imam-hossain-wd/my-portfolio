@@ -8,28 +8,28 @@ const Navbar = () => {
   const navmenu = (
     <>
       <li>
-        <Link className="cool-link text-[16px]" smooth to="#home">
+        <Link className="cool-link text-[17px]" smooth to="#home">
           Home
         </Link>
       </li>
       <li>
-        <Link className="cool-link text-[16px]" smooth to="#about">
-          about
+        <Link className="cool-link text-[17px]" smooth to="#about">
+          About
         </Link>
       </li>
       <li>
-        <Link className="cool-link text-[16px]" smooth to="#projects">
+        <Link className="cool-link text-[17px]" smooth to="#projects">
           Projects
         </Link>
       </li>
       <li>
-        <Link className="cool-link text-[16px]" smooth to="#services">
+        <Link className="cool-link text-[17px]" smooth to="#services">
           Services
         </Link>
       </li>
       <li>
-        <Link className="cool-link text-[16px]" smooth to="#contact">
-          contact
+        <Link className="cool-link text-[17px]" smooth to="#contact">
+          Contact
         </Link>
       </li>
       {/* <li>
@@ -41,7 +41,8 @@ const Navbar = () => {
   );
   return (
     <section className="">
-      <div className="w-full navbar bg-gray-900 fixed top-0 z-50">
+      {/* fixed top-0 z-50 */}
+      <div className="w-full navbar bg-gray-900 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -62,7 +63,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-60 "
             >
               {navmenu}
             </ul>
@@ -78,7 +79,7 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 mt-2">{navmenu}</ul>
         </div>
 
-       <div className="ml-28">
+       <div className="ml-24 md:ml-10 lg:ml-0">
        <Drawer />
        </div>
       </div>

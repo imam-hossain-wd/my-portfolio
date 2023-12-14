@@ -13,7 +13,7 @@ const Drawer = () => {
   };
 
   return (
-    <div className="drawer drawer-end">
+    <div className="drawer drawer-end z-50">
       <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <label htmlFor="my-drawer-4" className="cool-link border border-white py-2 px-3 rounded-sm text-white fond-semi-bold hover:text-white hover:border-0 hover:m-[1px] transition delay-150 transform">
@@ -35,12 +35,12 @@ const Drawer = () => {
            hover:bg-rose-500
                  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-white p-2 rounded-full
                 '>
-            <Link to="tel:01624243747"><FaPhone /></Link>
+            <Link to="tel:8801624243747"><FaPhone /></Link>
           </p>
          
           <p className=' hover:bg-green-500
                  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full'>
-            <Link to="https://api.whatsapp.com/send?phone=01624243747"> <FaWhatsapp /></Link>
+            <Link to="https://api.whatsapp.com/send?phone=8801624243747"> <FaWhatsapp /></Link>
           </p>
           <p className='hover:bg-sky-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full'>
 

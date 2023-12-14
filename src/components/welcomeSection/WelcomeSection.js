@@ -38,6 +38,7 @@ const WelcomeSection = () => {
                 </div>
             </section>
         </div>
+       
     );
 };
 
