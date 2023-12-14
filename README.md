@@ -7,8 +7,7 @@
 
 Welcome to my developer portfolio website! This project showcases my skills, projects, and provides information about my services and how to get in touch with me. The website is built using React, styled with Tailwind CSS, and features an integrated email functionality powered by EmailJS for seamless communication.
 
-Visit the live site: [[Your Portfolio Website](https://imam-protfolio.netlify.app/)]([https://your-portfolio-url.com](https://imam-protfolio.netlify.app/))
-
+Visit the live site: <a href="/https://imam-protfolio.netlify.app/">Live Website<a/>
 ## Features
 
 - **Skills:** Explore a comprehensive list of my technical skills.
