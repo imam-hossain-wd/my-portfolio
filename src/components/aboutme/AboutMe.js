@@ -12,7 +12,7 @@ const AboutMe = () => {
                 <h1 className='text-3xl mt-2'>About me</h1>
             </div>
 
-            <div className="flex flex-col md:flex-col lg:flex-row justify-evenly items-center mt-5" >
+            <div className="flex flex-col md:flex-col lg:flex-row justify-around items-center mt-5 w-[90%] mx-auto" >
 
                 <div className="">
                     <img
@@ -22,7 +22,7 @@ const AboutMe = () => {
                     />
                 </div>
                 <div>
-                    <p className="w-full lg:w-[500px] text-md text-white text-md mt-10">
+                    <p className="w-full lg:w-[500px] text-lg text-white text-md mt-10">
                         Hello! <br />
                         I'm a Full Stack Developer specializing in frontend and backend technologies. With a strong foundation in HTML5, CSS3, and JavaScript, I've evolved to embrace modern tools like TypeScript, ReactJS, and Next.js. I craft seamless user experiences using ReduxJS for state management and ensure flawless responsiveness with Tailwind CSS and Bootstrap. <br/>
 

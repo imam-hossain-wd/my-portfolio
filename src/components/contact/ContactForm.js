@@ -1,8 +1,9 @@
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const ContactForm = ({ size }) => {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit , reset } = useForm();
 
   const buttonStyle = {
     width: size,
@@ -17,15 +18,17 @@ const ContactForm = ({ size }) => {
         subject: data.subject,
         message: data.message,
       };
-
       await emailjs.send(
         "service_ui7qfhs",
         "template_msue0rc",
         templateParams,
         "wfwXYdRYM4QGmPWnk"
       );
-      console.log("Email sent successfully");
+      toast.success('Successfully created!');
+      reset();
+     
     } catch (error) {
+      toast.error(error);
       console.error("Error sending email:", error);
     }
   };
@@ -46,7 +49,7 @@ const ContactForm = ({ size }) => {
         />
       </label>
       <label>
-        <p className="mb-2">Email</p>
+        <p className="my-2">Email</p>
         <input
           type="text"
           placeholder="Enter Email"
@@ -55,7 +58,7 @@ const ContactForm = ({ size }) => {
         />
       </label>
       <label>
-        <p className="mb-2">Subject</p>
+        <p className="my-2">Subject</p>
         <input
           type="text"
           placeholder="Enter Subject"
@@ -64,7 +67,7 @@ const ContactForm = ({ size }) => {
         />
       </label>
       <label>
-        <p className="mb-2">Message</p>
+        <p className="my-2">Message</p>
         <textarea
           {...register("message")}
           className="textarea bg-white textarea-ghost w-full text-black"
@@ -75,7 +78,7 @@ const ContactForm = ({ size }) => {
         <div className="flex justify-center mt-3">
           <button
             style={buttonStyle}
-            className="cool-link w-48 border border-white h-10 text-white rounded-sm text-white fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"
+            className="cool-link w-48 border border-white h-10 text-white rounded-sm fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"
           >
             Submit
           </button>

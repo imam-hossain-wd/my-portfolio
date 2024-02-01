@@ -4,6 +4,7 @@ import './projects.css'
 import { FaGithub, FaLink } from 'react-icons/fa';
 import Model from '../shared/Model';
 
+
 const Projects = () => {
 
     const [data, setData] = useState('')
@@ -30,44 +31,38 @@ const Projects = () => {
                         </div>
                         <div className="details">
                             <div className="center">
-                                <h1 className='text-rose-500'>{project.name}<br />
+                                <h1 className='text-green-400 text-center -mt-20 '>{project.name}<br />
 
                                 </h1>
-                                <p>{project?.description?.slice(0, 100)}  <label
-                                    htmlFor="ProjectDataModel"
-                                    onClick={() => setData(project)}
-                                    className="btn btn-link btn-xs capitalize"
+                                <label
+                                    htmlFor="ProjectDataModel" onClick={() => setData(project)} 
+                                    
+                                    className="cool-link border border-white h-8 mt-3 text-white font-semibold hover:border-transparent transition delay-150 transform w-36 text-center mb-2"
                                 >
-                                    Read more..
-                                </label> </p>
+                                  Details
+                                </label>
+                           
                                 <div className='flex flex-col justify-center'>
 
-                                    <button className='btn btn-sm border-0 rounded-full bg-black text-white mb-2'><Link className='flex' to={project?.link}> <span className='mr-2'><FaLink /></span> Live Link </Link></button>
+                                    <button className='cool-link border border-white h-8 mb-2 text-white font-semibold hover:border-transparent  transition delay-150 transform w-36 text-center '><Link className=' flex justify-evanly items-center ml-4' to={project?.link}> <span className='mr-3'><FaLink /></span> Live Link </Link></button>
 
-                                    <button className='btn btn-sm border-0 rounded-full bg-black text-white mb-2'><Link className='flex' to={project?.clientCode}> <span className='mr-2'><FaGithub /></span> client Code </Link></button>
+                                    <button className='cool-link border border-white h-8 mb-2  text-white font-semibold hover:border-transparent transition delay-150 transform w-36 text-center'><Link className='flex justify-evanly ml-4 items-center' to={project?.clientCode}> <span className='mr-3'><FaGithub /></span> client Code </Link></button>
+
 
                                     {
-                                        project?.serverCode && <button className='btn btn-sm border-0 rounded-full bg-black text-white mb-2'><Link className='flex' to={project?.serverCode}> <span className='mr-2'><FaGithub /></span> Server Code </Link></button>
-
+                                        project?.serverCode && <button className='cool-link border border-white h-8 mb-2 text-white font-semibold hover:border-transparent  transition delay-150 transform w-36 text-center'><Link className='flex justify-evanly ml-4 items-center' to={project?.serverCode}> <span className='mr-3'><FaGithub /></span> Server Code </Link></button>
                                     }
-
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
-
             {data && <Model
                 data={data}
                 setData={setData}
-
-
             />}
-
         </section>
-
     );
 };
 

@@ -32,17 +32,12 @@ const Navbar = () => {
           Contact
         </Link>
       </li>
-      {/* <li>
-        <Link className="cool-link text-[16px]" smooth to="#contact">
-          Hire Me
-        </Link>
-      </li> */}
+   
     </>
   );
   return (
-    <section className="">
-      {/* fixed top-0 z-50 */}
-      <div className="w-full navbar bg-gray-900 ">
+    <section >
+      <div className="w-full navbar h-20 shadow-2xl fixed top-0 left-0 z-10 bg-[#0E172D]" style={{borderBottom:"1px solid black"}}>
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,7 +58,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-60 "
+              className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-transparent rounded-box w-60 "
             >
               {navmenu}
             </ul>
@@ -75,11 +70,11 @@ const Navbar = () => {
             <img src={logo} alt="coding" className="w-10 h-10 rounded-full" />
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex ml-10">
           <ul className="menu menu-horizontal px-1 mt-2">{navmenu}</ul>
         </div>
 
-       <div className="ml-24 md:ml-10 lg:ml-0">
+       <div className="ml-28 md:ml-10 lg:ml-2">
        <Drawer />
        </div>
       </div>
