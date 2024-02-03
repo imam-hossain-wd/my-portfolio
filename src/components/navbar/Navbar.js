@@ -37,7 +37,7 @@ const Navbar = () => {
   );
   return (
     <section >
-      <div className="w-full navbar h-20 shadow-2xl fixed top-0 left-0 z-10 bg-[#0E172D]" style={{borderBottom:"1px solid black"}}>
+      <div className="w-full navbar h-20 shadow-2xl fixed top-0 left-0 z-10 bg-[#0E172D]">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

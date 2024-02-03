@@ -7,7 +7,7 @@ import WelcomeSection from '../../welcomeSection/WelcomeSection';
 import AboutMe from '../../aboutme/AboutMe';
 import Services from '../../services/Services';
 import Projects from '../../Projects/Projects';
-import Skills from '../../skills/Skills';
+import MySkills from '../../skills/MySkills';
 
 const MainHome = () => {
     return (
@@ -17,7 +17,7 @@ const MainHome = () => {
             <WelcomeSection />
             <AboutMe/>
             <Services />
-            <Skills/>
+            <MySkills />
             <Projects />
             <Contact />
             <Footer />

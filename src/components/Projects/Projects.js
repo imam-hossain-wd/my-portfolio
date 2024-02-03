@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './projects.css'
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub, FaInfo, FaLink } from 'react-icons/fa';
 import Model from '../shared/Model';
 
 
@@ -23,9 +23,9 @@ const Projects = () => {
                 <h1 className="text-4xl font-bold mt-2">Projects</h1>
             </div>
 
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
                 {projects && projects.map((project) => (
-                    <div className="card" key={project.id}>
+                    <div className="card w-full" key={project.id}>
                         <div className="image">
                             <img className='' src={project.image} alt="Project" />
                         </div>
@@ -37,9 +37,9 @@ const Projects = () => {
                                 <label
                                     htmlFor="ProjectDataModel" onClick={() => setData(project)} 
                                     
-                                    className="cool-link border border-white h-8 mt-3 text-white font-semibold hover:border-transparent transition delay-150 transform w-36 text-center mb-2"
+                                    className="cool-link border border-white h-8 mt-3 text-white font-semibold hover:border-transparent transition delay-150 transform w-36 text-center mb-2 flex"
                                 >
-                                  Details
+                                 <span className='flex  items-center ml-4'><FaInfo /> <span className='ml-3'>Details</span></span>
                                 </label>
                            
                                 <div className='flex flex-col justify-center'>

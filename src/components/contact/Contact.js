@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section scroll-smooth id="contact" className="my-10">
+    <section scroll-smooth id="contact" className="my-12 w-[90%] mx-auto">
       <h1 className="text-4xl text-white font-bold text-center mb-10">
         Contact Me
       </h1>
@@ -12,41 +12,41 @@ const Contact = () => {
           <p className="text-white text-xl text-center">Contact Information</p>
           <div
             style={{ backgroundColor: "#1B2436" }}
-            className="my-5 p-5 text-white w-full lg:w-96  rounded"
+            className="my-5 p-5 h-32 flex items-center text-white w-full lg:w-96  rounded"
           >
             <div className="flex  items-center">
-              <p className="text-2xl rounded-full">
+              <p className="text-2xl ml-2 rounded-full">
                 <FaPhoneAlt />
               </p>
-              <div className="text-xl ml-5 ">
-                <p> Contact on Phone</p>
+              <div className="text-xl ml-8 ">
+                <p className=""> Call me anytime</p>
                 <p>01624243747</p>
               </div>
             </div>
           </div>
           <div
             style={{ backgroundColor: "#1B2436" }}
-            className="my-5 p-5 text-white w-full lg:w-96 rounded"
+            className="my-5 p-5 flex items-center text-white h-36 w-full lg:w-96 rounded"
           >
             <div className="flex  items-center">
-              <p className="text-2xl rounded-full">
+              <p className="text-2xl ml-2 rounded-full">
                 <FaEnvelope />
               </p>
-              <div className="text-xl ml-5 ">
-                <p>Contact on Email</p>
+              <div className="text-xl ml-8 ">
+                <p>Send Mail</p>
                 <p>imamhossain6t9@gmail.com</p>
               </div>
             </div>
           </div>
           <div
             style={{ backgroundColor: "#1B2436" }}
-            className="my-5 p-5 text-white h-32 w-full lg:w-96 rounded"
+            className="my-5 p-5 flex items-center text-white h-36 w-full lg:w-96 rounded"
           >
-            <div className="flex  items-center">
-              <p className="text-2xl rounded-full">
+            <div className="flex items-center">
+              <p className="text-2xl ml-2 rounded-full">
                 <FaMapMarkerAlt />
               </p>
-              <div className="text-xl ml-5 ">
+              <div className="text-xl ml-8">
                 <p>Contact Address</p>
                 <p>Kaptai Road Modunaghat, Hathazari , Chattogram</p>
               </div>
@@ -55,6 +55,7 @@ const Contact = () => {
         </div>
 
         <div className="w-full lg:w-[600px]">
+          <p className="text-center text-white text-lg">Send Me A Message</p>
           <ContactForm size="200px" />
         </div>
       </div>
