@@ -40,11 +40,11 @@ const SwiperSlider = ({ skillDatas }) => {
       autoplay={{ delay: 2000, disableOnInteraction: false }}
       breakpoints={breakpoints}
     >
-      <div className="pb-5">
+      <div>
         {skillDatas?.map((skill, index) => (
-          <SwiperSlide className="flex flex-col transition ease-in-out delay-150 hover:-translate-y-1  hover:scale-110 duration-300 "  key={index}>
+          <SwiperSlide className="flex flex-col"  key={index}>
             <img className="rounded " src={skill?.url} alt="images" />
-            <p className="text-white mt-2 text-lg mb-12">{skill?.name}</p>
+            <p className="text-white mt-2 text-lg">{skill?.name}</p>
           </SwiperSlide>
         ))}
       </div>

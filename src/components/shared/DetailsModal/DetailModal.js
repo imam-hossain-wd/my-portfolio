@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Model = ({data,setData}) => {
+const DetailModal = ({data,setData}) => {
 
     const [showModel, setShowModel]= useState(true)
 
@@ -25,8 +25,10 @@ const Model = ({data,setData}) => {
             ✕
           </label>
             <div className='text-white'>
-            <h3 className="text-xl font-bold m-3 text-center text-rose-400">{data?.name}</h3>
-            <img className='rounded-lg border-2 p-2' src={data.image} alt="projectimage"/>
+            <h3 className="text-xl font-bold m-3 text-center ">{data?.name}</h3>
+            <div className='rounded-lg border-2 p-1'>
+            <img className='rounded h-72 w-full' src={data.image} alt="projectimage"/>
+            </div>
             <h3 className="text-sm m-2"><span className=' font-bold'>Tools :</span> {data?.tools}</h3>
             <h3 className="text-sm mx-2 my-1">{data?.description}</h3>
             <div className='flex  justify-around mt-2'>
@@ -44,4 +46,4 @@ const Model = ({data,setData}) => {
     );
 };
 
-export default Model;
+export default DetailModal;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './projects.css'
 import { FaGithub, FaInfo, FaLink } from 'react-icons/fa';
-import Model from '../shared/Model';
+import DetailModal from '../shared/DetailsModal/DetailModal';
 
 
 const Projects = () => {
@@ -17,10 +17,9 @@ const Projects = () => {
     }, [])
     return (
 
-        <section id="projects" className="mt-20">
-            <div className="text-center mb-10 text-white ">
-                <h1 className="text-2xl">Recent My Work</h1>
-                <h1 className="text-4xl font-bold mt-2">Projects</h1>
+        <section id="projects" className="mt-10">
+            <div className="text-center  text-white ">
+                <h1 className="text-3xl my-12 font-bold">A Gallery of Creations Codefolio</h1>
             </div>
 
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
@@ -58,7 +57,7 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-            {data && <Model
+            {data && <DetailModal
                 data={data}
                 setData={setData}
             />}

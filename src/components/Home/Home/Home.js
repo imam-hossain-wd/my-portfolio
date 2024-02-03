@@ -12,7 +12,7 @@ import image1 from "../../../assets/images/banner.png";
 import "./home.css";
 import textMorphAnimation from "./textMorphAnimation";
 
-const Home = () => {
+const Home = ({openDrawer}) => {
   useEffect(() => {
     textMorphAnimation();
   }, []);
@@ -98,15 +98,15 @@ const Home = () => {
         <Link
           to="#home"
           smooth
-          className="animate-bounce text-white fixed bottom-14 right-10 text-[28px]  hover:text-3xl  w-8 h-8 flex justify-center items-center rounded-full"
+          className="animate-bounce text-white fixed bottom-14 right-10 z-20 text-[28px]  hover:text-3xl  w-8 h-8 flex justify-center items-center rounded-full"
         >
           <FaArrowAltCircleUp />
         </Link>
-        <div className="flex flex-col items-center text-[28px] font-bold fixed top-32 right-0 bg-black w-24 pb-3 rounded-lg">
+        <div className={`${openDrawer ? "hidden" : "block"} flex flex-col items-center text-[28px] font-bold fixed z-10 top-32 right-0 bg-[#1B2436] w-[85px] pb-3 rounded-lg`}>
           <p
             className="
           mb-2 mt-5 hover:border-2
-                border-2 border-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full
+                border-2 border-[#1B2436] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full
                 "
           >
             <Link
@@ -120,7 +120,7 @@ const Home = () => {
 
           <p
             className="mb-2 hover:border-2
-                border-2 border-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full"
+                border-2 border-[#1B2436] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full"
           >
             <Link to="https://github.com/imam-hossain-wd" target="_blank">
               {" "}
@@ -129,7 +129,7 @@ const Home = () => {
           </p>
           <p
             className="mb-2  hover:border-2
-                border-2 border-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full"
+                border-2 border-[#1B2436] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full"
           >
             <Link to="https://twitter.com/imam_hossain_wd" target="_blank">
               <FaTwitter />
@@ -138,7 +138,7 @@ const Home = () => {
 
           <p
             className="text-3xl mb-2 hover:border-2
-                border-2 border-black transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full"
+                border-2 border-[#1B2436] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:border-white duration-300 text-white p-2 rounded-full"
           >
             <Link
               to="https://api.whatsapp.com/send?phone=01624243747"

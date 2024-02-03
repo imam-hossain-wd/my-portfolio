@@ -4,7 +4,7 @@ import "./nav.css";
 import logo from "../../assets/images/coding.jpg";
 import Drawer from "./Drawer";
 
-const Navbar = () => {
+const Navbar = ({openDrawer, setOpenDrawer}) => {
   const navmenu = (
     <>
       <li>
@@ -37,7 +37,7 @@ const Navbar = () => {
   );
   return (
     <section >
-      <div className="w-full navbar h-20 shadow-2xl fixed top-0 left-0 z-10 bg-[#0E172D]">
+      <div className="w-full navbar h-20 fixed top-0 left-0 z-10 bg-[#0E172D]">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -74,8 +74,8 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 mt-2">{navmenu}</ul>
         </div>
 
-       <div className="ml-28 md:ml-10 lg:ml-2">
-       <Drawer />
+       <div  className="ml-28 md:ml-10 lg:ml-2">
+       <Drawer setOpenDrawer={setOpenDrawer} />
        </div>
       </div>
     </section>

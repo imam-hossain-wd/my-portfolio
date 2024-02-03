@@ -12,9 +12,9 @@ const MySkills = () => {
   return (
     <div>
       <div className="text-center text-white mb-10">
-                    <h2 className="text-3xl font-bold my-2">My Skills</h2>
-                    <h1 className="text-4xl font-bold">I'm great in what I do <br /> and I'm loving it</h1>
-                    <h3 className="text-lg mt-5">These following web services  that I am expert. I can assure this things that <br /> I can do the best web appliation using these all things </h3>
+                    <h2 className="text-xl font-bold my-2">My Skills</h2>
+                    <h1 className="text-2xl font-bold">I'm great in what I do  and I'm loving it</h1>
+                    <h3 className="text-lg mt-3">These following web services  that I am expert. I can assure this things that <br /> I can do the best web appliation using these all things </h3>
                 </div>
       <div className="flex lg:ml-16">
         <button

@@ -1,28 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home from '../Home/Home';
-import Navbar from '../../navbar/Navbar';
 import Contact from '../../contact/Contact';
-import Footer from '../../footer/Footer';
 import WelcomeSection from '../../welcomeSection/WelcomeSection';
 import AboutMe from '../../aboutme/AboutMe';
 import Services from '../../services/Services';
 import Projects from '../../Projects/Projects';
 import MySkills from '../../skills/MySkills';
+import Navbar from '../../navbar/Navbar';
 
 const MainHome = () => {
+    const [openDrawer, setOpenDrawer]= useState(false)
     return (
-        <div>
-            <Navbar/>
-            <Home />
+        <>
+        <Navbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer}/>
+            <Home  openDrawer={openDrawer}/>
             <WelcomeSection />
             <AboutMe/>
             <Services />
             <MySkills />
             <Projects />
-            <Contact />
-            <Footer />
-            
-        </div>
+            <Contact />            
+        </>
     );
 };
 

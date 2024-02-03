@@ -41,13 +41,13 @@ const WelcomeSection = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[80%] gap-10 lg:gap-10 mx-auto">
           {creativities.map((creativity, index) => (
             <div key={index}>
-              <div className="bg-black border-[1px] rounded-lg border-white p-2 text-white  h-72 text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#40407a] hover:border-0 duration-300 mb-5">
+              <div className="bg-[#1B2436] border-[1px] rounded-lg border-white p-2 text-white  h-72 text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  hover:border-0 duration-300 mb-5">
               <div className='flex justify-center flex-col items-center'>
-          <p className='text-6xl text-white my-3 '>{creativity.icon} </p>
+          <p className='text-5xl text-white my-3 '>{creativity.icon} </p>
 
   <h3 className="font-bold text-2xl lg:text-3xl ">{creativity.name}</h3>
           </div>
-           <p className="text-xl lg:text-2xl mt-2">{creativity.description}</p>
+           <p className="text-xl  mt-2">{creativity.description}</p>
               </div>
             </div>
           ))}
