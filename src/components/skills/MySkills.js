@@ -10,13 +10,12 @@ const MySkills = () => {
   const [activeSkills, setActiveSkills] = useState("frontend");
 
   return (
-    <div>
-      <div className="text-center text-white mb-10">
-                    <h2 className="text-xl font-bold my-2">My Skills</h2>
+    <div className="mt-14">
+      <div className="text-center text-white ">
                     <h1 className="text-2xl font-bold">I'm great in what I do  and I'm loving it</h1>
                     <h3 className="text-lg mt-3">These following web services  that I am expert. I can assure this things that <br /> I can do the best web appliation using these all things </h3>
                 </div>
-      <div className="flex lg:ml-16">
+      <div className="flex lg:ml-16 mt-10">
         <button
           onClick={() => setActiveSkills("frontend")}
           className={`${activeSkills === "frontend" ? "text-red" : ""} cool-link border border-white h-8 text-white font-semibold hover:border-0 mr-2 mb-2 transition delay-150 transform w-28`}

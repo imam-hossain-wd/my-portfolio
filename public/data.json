@@ -2,6 +2,7 @@
     {
         "id": "1",
         "name": "Green Harvest",
+        "category":"react",
         "image": "https://i.ibb.co/VjTXpk3/green-harvest-cover.png",
         "link": "https://super-green-harvest.netlify.app/",
         "clientCode": "https://github.com/imam-hossain-wd/GreenHarvest-client",
@@ -12,6 +13,7 @@
     {
         "id": "2",
         "name": "Car Dev",
+        "category":"next js",
         "image": "https://i.ibb.co/cgQkvmk/car-dev-cover.png",
         "link": "https://car-dev-next.vercel.app/",
         "clientCode": "https://github.com/imam-hossain-wd/ph-car-service-next",
@@ -20,8 +22,9 @@
         "description": "CarDev is a robust full-stack web application designed to transform the car repair and service industry. Seamlessly integrating modern technologies and frameworks, CarDev caters to three pivotal roles: SuperAdmin, Admin, and User."
     },
     {
-        "id": "1",
+        "id": "3",
         "name": "Build Dream's Pc",
+        "category":"next js",
         "image": "https://i.ibb.co/LgC1dvF/build-dream-pc-cover.png",
         "link": "https://pc-builder-next-seven.vercel.app/",
         "clientCode": "https://github.com/imam-hossain-wd/next-pc-builder",
@@ -30,8 +33,9 @@
         "description": "CarDev is a robust full-stack web application designed to transform the car repair and service industry. Seamlessly integrating modern technologies and frameworks, CarDev caters to three pivotal roles: SuperAdmin, Admin, and User."
     },
     {
-        "id": "1",
+        "id": "4",
         "name": "Book Catalog",
+        "category":"react",
         "image": "https://i.ibb.co/LtYz3dm/book-catalog-cover.png",
         "link": "https://vermillion-bonbon-a2823d.netlify.app/",
         "clientCode": "https://github.com/imam-hossain1/book-catalog-client",
@@ -40,8 +44,9 @@
         "description": "On this website, there are 3 private routes for admin, seller, and buyer. Anyone can’t see others dashboard info. It’s a full-stack web application. There is applying stripe payment method and firebase authentication, sign in, signup functionality, and used MongoDB for storing user’s data. On this website, sellers can sell their products and buyer can buy products using stripe payment and admins can perform admin functionality using the admins dashboard"
     },
     {
-        "id": "2",
+        "id": "5",
         "name": "Resale Zone",
+        "category":"react",
         "image": "https://i.ibb.co/NTYZHTQ/resale-zone.png",
         "link": "https://i.ibb.co/8xNrvkH/resale-zone.png",
         "clientCode": "https://github.com/imam-hossain1/resale-product-client",
@@ -50,8 +55,9 @@
         "description": "A mobile resale market with Admin, seller & buyer panel. Admin, seller, and buyer can manage their products, orders, report and other stuffs. Authenticate seller can sell mobiles phone and buyer can buy Mobile phones and Admin maintenance whole website. This website is full secure with jwt and firebase authentication. There are login, register, protector routes as well as Payment integrated with Stripe. Admin can see all buyer, seller and delete as well as update. There is another role of super admin. Super admin delete all user."
     },
     {
-        "id": "4",
+        "id": "6",
         "name": "Travel Zone",
+        "category":"react",
         "image": "https://i.ibb.co/QjmsP3t/Screenshot-43.png",
         "link": "https://service-review-assignmen-54e53.web.app/",
         "clientCode": "https://github.com/imam-hossain1/service-review-client-side",
@@ -59,8 +65,9 @@
         "description": "This is a travelling website around in Bangladesh . This website provides tour around in bangaldesh . A Tourist easily booking tricket from this website. A very secure and fully responsive website .Before booking a sit user have to login without login user cannot book site"
     },
     {
-        "id": "3",
+        "id": "7",
         "name": "Just Tech",
+        "category":"react",
         "image": "https://i.ibb.co/1vzSC0k/Screenshot-42.png",
         "link": "https://just-tech-10.web.app/",
         "clientCode": "https://github.com/imam-hossain1/book-catalog-client",
@@ -68,8 +75,9 @@
         "description": "This is a responsive online course selling website .There are many online programming language courses available in this website. There is a categories section in this website. User can purcheses courses their own choice.Some page user cannot access without login. very secure and responsive single page web application"
     },
     {
-        "id": "5",
+        "id": "8",
         "name": "News King",
+        "category":"javascript",
         "image": "https://i.ibb.co/MGSgmxf/Screenshot-52.png",
         "link": "https://stellar-pika-0b338d.netlify.app/index.html#",
         "clientCode": "https://github.com/Programming-Hero-Web-Course4/b6-news-portal-assignment-imam-hossain1",
@@ -77,24 +85,67 @@
         "description": "News king website provides all king to international news .there are many categories news. This website full responsive and firebase attentication.There are login register page in this website"
     },
     {
-        "id": "6",
+        "id": "9",
         "name": "Image Gallery",
-        "image": "",
+        "category":"react",
+        "image": "https://i.ibb.co/MGSgmxf/Screenshot-52.png",
         "link": "https://dndkit-image-gallery.netlify.app/",
         "clientCode": "https://github.com/Programming-Hero-Web-Course4/b6-ultra-active-club-imam-hossain1",
         "description": "Quiz creackerz website provides programming language quiz. Learner can practise their programming language and see result"
     },
     {
-        "id": "6",
+        "id": "10",
         "name": "Quiz Crackerz",
+        "category":"javascript",
         "image": "https://i.ibb.co/k6JgD5J/Screenshot-49.png",
         "link": "https://stately-piroshki-dfd2d7.netlify.app/home",
         "clientCode": "https://github.com/Programming-Hero-Web-Course4/b6-ultra-active-club-imam-hossain1",
         "description": "Quiz creackerz website provides programming language quiz. Learner can practise their programming language and see result"
     },
     {
-        "id": "7",
+        "id": "11",
+        "category":"html css",
         "name": "Master Pro",
+        "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
+        "link": "https://imam-hossain1.github.io/my-third-project/",
+        "clientCode": "https://github.com/imam-hossain1/my-third-project"
+    },
+    {
+        "id": "12",
+        "category":"backend",
+        "name": "Super Shop Backend",
+        "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
+        "link": "https://imam-hossain1.github.io/my-third-project/",
+        "clientCode": "https://github.com/imam-hossain1/my-third-project"
+    },
+    {
+        "id": "13",
+        "category":"backend",
+        "name": "Book Catalog",
+        "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
+        "link": "https://imam-hossain1.github.io/my-third-project/",
+        "clientCode": "https://github.com/imam-hossain1/my-third-project"
+    },
+    {
+        "id": "14",
+        "category":"backend",
+        "name": "Car Dev",
+        "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
+        "link": "https://imam-hossain1.github.io/my-third-project/",
+        "clientCode": "https://github.com/imam-hossain1/my-third-project"
+    },
+    {
+        "id": "15",
+        "category":"backend",
+        "name": "Pc Builder",
+        "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
+        "link": "https://imam-hossain1.github.io/my-third-project/",
+        "clientCode": "https://github.com/imam-hossain1/my-third-project"
+    },
+    {
+        "id": "15",
+        "category":"backend",
+        "name": "Resale Zone",
         "image": "https://i.ibb.co/3cr8Z43/Screenshot-47.png",
         "link": "https://imam-hossain1.github.io/my-third-project/",
         "clientCode": "https://github.com/imam-hossain1/my-third-project"

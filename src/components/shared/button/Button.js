@@ -1,11 +1,13 @@
 
-export const Button = ({ className, buttonName}) => {
+const Button = ({ onClick, isActive, name, className }) => {
   return (
     <button
-      className={`cool-link border border-white h-10  text-white font-semibold hover:border-0 mr-2 mb-2 transition delay-150 transform ${className}`}
+      onClick={onClick}
+      className={`${isActive ? "text-red" : ""} ${className}`}
     >
-      {buttonName}
+      {name}
     </button>
   );
 };
 
+export default Button;

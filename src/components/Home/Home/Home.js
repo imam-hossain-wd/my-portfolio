@@ -98,7 +98,7 @@ const Home = ({openDrawer}) => {
         <Link
           to="#home"
           smooth
-          className="animate-bounce text-white fixed bottom-14 right-10 z-20 text-[28px]  hover:text-3xl  w-8 h-8 flex justify-center items-center rounded-full"
+          className={`${openDrawer ? "hidden" : "block"} animate-bounce text-white fixed bottom-14 right-10 z-20 text-[28px]  hover:text-3xl  w-8 h-8 flex justify-center items-center rounded-full`}
         >
           <FaArrowAltCircleUp />
         </Link>

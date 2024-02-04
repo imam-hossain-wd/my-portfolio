@@ -8,21 +8,21 @@ const AboutMe = () => {
     return (
         <section id="about" className="mt-10">
             <div className="text-center  font-bold text-white">
-                <p className="text-4xl capitalize">Get to know me</p>
-                <h1 className='text-3xl mt-2'>About me</h1>
+                <p className="text-xl italic capitalize">Unlocking My Code Journey</p>
+                <h1 className='text-3xl mt-2'>A Peek into My Passion for Web Development</h1>
             </div>
-
-            <div className="flex flex-col md:flex-col lg:flex-row justify-around items-center mt-5 w-[90%] mx-auto" >
+            
+            <div className="flex flex-col md:flex-col lg:flex-row justify-around items-center w-[90%] mx-auto" >
 
                 <div className="">
                     <img
                         src={image2}
                         alt=""
-                        className="rounded-lg w-full lg:w-[470px] h-[450px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#2c2c54] hover:border-0 duration-300"
+                        className="rounded-lg w-full lg:w-[400px] h-[400px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#2c2c54] hover:border-0 duration-300"
                     />
                 </div>
                 <div>
-                    <p className="w-full lg:w-[500px] text-lg text-white text-md mt-10">
+                    <p className="w-full lg:w-[500px] text-lg text-[#F5F5F5] text-[15px] mt-10">
                         Hello! <br />
                         I'm a Full Stack Developer specializing in frontend and backend technologies. With a strong foundation in HTML5, CSS3, and JavaScript, I've evolved to embrace modern tools like TypeScript, ReactJS, and Next.js. I craft seamless user experiences using ReduxJS for state management and ensure flawless responsiveness with Tailwind CSS and Bootstrap. <br/>
 
@@ -35,11 +35,8 @@ const AboutMe = () => {
                         Explore my portfolio to witness my creativity and problem-solving in action. Let's team up to turn your ideas into exceptional digital realities!
 
                     </p>
-                    {/* <button className="btn bg-green-400 rounded-full w-44 border-0 btn-outline w-60 mb-3 mt-10 text-white hover:bg-white">
-                        <Link to="#contact">Talk With me</Link>
-                    </button> */}
-                      <div className='flex justify-center mt-5'>
-      <button  className="cool-link w-48 border border-white h-10 text-white rounded-sm text-white fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"><Link to="#contact">Talk With me</Link></button>
+                      <div className='smooth flex justify-center mt-5'>
+      <button  className="cool-link w-48 border border-white h-10 text-white rounded-sm  fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"><Link to="#contact">Talk With me</Link></button>
       </div>
                 </div>
             </div>
