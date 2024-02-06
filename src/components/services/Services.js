@@ -1,53 +1,67 @@
-import React from 'react';
+import React from "react";
 
 const Services = () => {
-    return (
-        <div>
-            <section id="services" className="mt-12">
-        <div className='text-white'>
+  const services = [
+    {
+      name: "Custom Web Application Development",
+      description:
+        "End-to-end development services for custom web applications tailored to the specific needs of businesses or organizations. Utilize frontend frameworks like ReactJS or AngularJS and backend technologies like Node.js or Django to build scalable and robust applications.",
+    },
+    {
+      name: "Full-Stack Development Services",
+      description:
+        "Comprehensive full-stack development services, including frontend development, backend development, database design, and deployment. Utilize a combination of technologies such as JavaScript (Node.js, React.js), Python (Django), or Java (Spring Boot) to deliver full-stack solutions.",
+    },
+    {
+      name: "RESTful API Development",
+      description:
+        "Specialize in designing and building RESTful APIs to facilitate communication between frontend and backend systems. Focus on creating well-documented and efficient APIs using frameworks like Express.js, Django REST Framework, or Flask.",
+    },
+    {
+      name: "Database Design and Optimization",
+      description:
+        "Offer expertise in database design, optimization, and management to ensure efficient storage and retrieval of data for large-scale applications. Provide services such as database schema design, query optimization, and performance tuning using technologies like MongoDB, PostgreSQL, or MySQL.",
+    },
+    {
+      name: "Consultation and Architecture Design",
+      description:
+        "Offer consultation services to businesses seeking guidance on technology stack selection, architecture design, and best practices in web application development. Provide architectural reviews, performance audits, and scalability assessments to optimize existing applications or plan for future growth.",
+    },
+    {
+      name: "UI/UX Design Services",
+      description:
+        "Specialize in creating intuitive and visually appealing user interfaces and experiences for web applications. Utilize modern design principles, tools like Figma or Adobe XD, and a deep understanding of user behavior to craft engaging UI/UX designs that enhance user satisfaction and usability.",
+    },
+  ];
+
+  return (
+    <div>
+      <section id="services" className="mt-12">
+        <div className="text-white">
           <h1 className="text-center text-2xl font-bold">SERVICE</h1>
-          <p className="text-center text-xl mb-5">See my following web design and development services <br/> that I am offering you</p>
+          <p className="text-center text-xl mb-5">
+            See my following web design and development services <br /> that I
+            am offering you
+          </p>
         </div>
 
-       <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-20 w-full  lg:w-4/5 mx-auto">
-
-        <div className="bg-[#1B2436] text-white p-10 rounded-lg  h-[340px] text-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-          <p><i className="fa-solid fa-code text-5xl text-white mb-2 -mt-5"></i></p>
-          <h1 className="text-3xl font-bold mb-2">Web Design</h1>
-          <p className="text-lg">Beautiful website using <br/>Tailwind,JavaScript, Typescript ,ReactJs , <br/>NextJs ,ReduxJs  JavaScript</p>
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 w-full  lg:w-4/5 mx-auto">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-[#1B2436] text-white p-10 rounded-lg  h-[340px] text-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 border-[1px] duration-300"
+            >
+              <p>
+                <i className="fa-solid fa-code text-5xl text-white mb-2 -mt-5"></i>
+              </p>
+              <h1 className="text-lg font-bold mb-3">{service.name}</h1>
+              <p className="text-sm">{service.description}</p>
+            </div>
+          ))}
         </div>
-
-        <div className="bg-[#1B2436] text-white p-10  rounded-lg  h-[340px] text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
-          <p><i className="fa-brands fa-square-xing text-5xl text-white mb-2 -mt-5"></i></p>
-          <h1 className="text-3xl font-bold mb-2">UI/UX Design</h1>
-          <p className="text-lg">Beautiful website using <br/> HTML, CSS, Bootstrap/Tailwind,<br/>  FontAwesome,  Jquery and JavaScript</p>
-        </div>
-
-        <div className="bg-[#1B2436] text-white p-10  rounded-lg h-[340px] text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-11 duration-300">
-          <p><i className="fa-brands fa-app-store text-5xl text-white mb-2 -mt-5"></i></p>
-          <h1 className="text-3xl font-bold mb-2">Single Page Application</h1>
-          <p className="text-lg">Sinlge Page Application (SPA) using HTML,CSS, Bootstrap/Tailwind, ReactJs</p>
-        </div>
-        <div className="bg-[#1B2436] text-white p-10  rounded-lg  h-[340px] text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
-          <p><i className="fa-solid fa-qrcode text-5xl text-white mb-2 -mt-5"></i></p>
-          <h1 className="text-3xl font-bold mb-2">Full Stack Application</h1>
-          <p className="text-lg">Full Stack Application using HTML, CSS, Bootstrap/Tailwind, JavaScript, React, Firebase, NodeJs, ExpressJs, MongoDB</p>
-        </div>
-        <div className="bg-[#1B2436] text-white p-10  rounded-lg  h-[340px] text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
-          <p><i className="fa-brands fa-creative-commons-sampling-plus text-5xl text-white mb-2 -mt-5"></i></p>
-          <h1 className="text-3xl font-bold mb-2">E-commerce Solution</h1>
-          <p className="text-lg">E-commerce Web Store using HTML, CSS,Bootstrap/ tailwind, JavaScript, ReactJs, Firebase, JWT, NodeJs, ExpressJs, MongoDB, Stripe payment method</p>
-        </div>
-        <div className="bg-[#1B2436] text-white p-10  rounded-lg h-[340px] text-center transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300">
-          <p>
-            <i className="fa-solid fa-browsers  text-5xl text-white mb-2 -mt-5"></i></p>
-          <h1 className="text-3xl font-bold mb-2">Problem Solving</h1>
-          <p className="text-lg">Problem solving using 2 years of web development experience</p>
-        </div>
-       </div>        
       </section>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Services;

@@ -20,9 +20,9 @@ const Home = ({openDrawer}) => {
     <div >
       <section
         id="home"
-        className="flex flex-col-reverse md:flex-col-reverse lg:flex-row justify-around lg:items-center"
+        className="flex flex-col-reverse md:flex-col-reverse lg:flex-row justify-around items-center"
       >
-        <div className="mt-40">
+        <div className="mt-16 lg:mt-40">
           <h3 className="mb-5 text-xl text-white italic">Hello , I'm</h3>
 
           <p className="line-1 anim-typewriter text-white text-4xl italic">
@@ -54,21 +54,21 @@ const Home = ({openDrawer}) => {
           </div>
           <div className="-mt-7 flex flex-col items-center lg:flex-row">
             <button
-              className="cool-link border border-white h-10 text-white rounded-sm fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"
-              style={{ width: "170px" }}
+              className="cool-link border border-white h-8 text-white rounded-sm fond-semi-bold  hover:border-0 w-40 mr-2 mb-2 transition delay-150 transform"
             >
               <Link
-                className="text-white"
-                to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing"
+              target="_blank"
+                className="text-white "
+                to="https://drive.google.com/file/d/1xoT9VA1l8i9k_MXLw8JNAtaUG3BjovXf/view?usp=sharing"
               >
                 Download Resume
               </Link>
             </button>
             <button
-              className="cool-link border border-white h-10  rounded-sm text-white  fond-semi-bold  hover:border-0 mr-2 mb-2 transition delay-150 transform"
-              style={{ width: "170px" }}
+              className="cool-link border border-white h-8  rounded-sm text-white  fond-semi-bold w-40 hover:border-0 mr-2 mb-2 transition delay-150 transform"
             >
               <Link
+              target="_blank"
                 className="text-white"
                 to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing"
               >
@@ -76,8 +76,7 @@ const Home = ({openDrawer}) => {
               </Link>
             </button>
             <button
-              className="cool-link -ml-2 lg:-ml-0 border border-white h-10 hover:border-rose-500 rounded-sm text-white  fond-semi-bold  hover:border-0 mb-2  transition delay-150 transform"
-              style={{ width: "170px" }}
+              className="cool-link -ml-2 lg:-ml-0 border border-white h-8 w-40 hover:border-rose-500 rounded-sm text-white  fond-semi-bold  hover:border-0 mb-2  transition delay-150 transform"
             >
               <Link
                 className="text-white"

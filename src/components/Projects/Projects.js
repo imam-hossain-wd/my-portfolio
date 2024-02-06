@@ -8,7 +8,7 @@ import Button from "../shared/button/Button";
 const Projects = () => {
   const [data, setData] = useState("");
   const [projects, setProjects] = useState([]);
-  const [activeSkills, setActiveSkills] = useState("react");
+  const [activeSkills, setActiveSkills] = useState("frontend");
 
   useEffect(() => {
     fetch("data.json")
