@@ -8,7 +8,7 @@ const AboutMe = () => {
     return (
         <section id="about" className="mt-10">
             <div className="text-center  font-bold text-white">
-                <p className="text-xl italic capitalize">Unlocking My Code Journey</p>
+                <p className="text-xl capitalize">Unlocking My Code Journey</p>
                 <h1 className='text-3xl mt-2'>A Peek into My Passion for Web Development</h1>
             </div>
             

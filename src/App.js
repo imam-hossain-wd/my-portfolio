@@ -7,7 +7,7 @@ function App() {
   return (
       <BrowserRouter >
       <Toaster/>
-      <div className="w-full lg:w-[90%] mx-auto">
+      <div className="w-full lg:w-[95%] mx-auto">
       <MainHome />
       </div>
       <Footer />

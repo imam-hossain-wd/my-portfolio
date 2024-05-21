@@ -59,7 +59,7 @@ const Home = ({openDrawer}) => {
               <Link
               target="_blank"
                 className="text-white "
-                to="https://drive.google.com/file/d/1xoT9VA1l8i9k_MXLw8JNAtaUG3BjovXf/view?usp=sharing"
+                to="https://drive.google.com/file/d/1E79kAJf3xrYDEHkW4PZ8__1siv1ON_Ns/view?usp=sharing"
               >
                 Download Resume
               </Link>
@@ -70,7 +70,7 @@ const Home = ({openDrawer}) => {
               <Link
               target="_blank"
                 className="text-white"
-                to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing"
+                to="https://drive.google.com/file/d/1FONplcQKb1agIQ09nGou5A8bMqzYs5yf/view?usp=sharing"
               >
                 Download CV
               </Link>

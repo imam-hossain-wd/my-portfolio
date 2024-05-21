@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <section id="projects" className="mt-10">
       <div className="text-center  text-white ">
-        <h1 className="text-2xl my-12 italic font-bold">
+        <h1 className="text-2xl my-12 font-bold">
           A Gallery of Creations Codefolio
         </h1>
       </div>
