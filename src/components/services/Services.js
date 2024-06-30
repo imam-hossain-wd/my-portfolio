@@ -36,24 +36,24 @@ const Services = () => {
     <div>
       <section id="services" className="mt-12">
         <div className="text-white">
-          <h1 className="text-center text-2xl font-bold">SERVICE</h1>
-          <p className="text-center text-xl mb-5">
-            See my following web design and development services <br /> that I
+          <h1 className="text-center mb-2 text-2xl font-bold">SERVICE</h1>
+          <p className="text-center  mb-10">
+            See my following web design and development services that I
             am offering you
           </p>
         </div>
 
-        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3   gap-10 w-full  lg:w-4/5 mx-auto">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 w-[80%]  lg:w-4/5 mx-auto">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#1B2436] text-white p-10 rounded-lg  h-[340px] text-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 border-[1px] duration-300"
+              className="bg-[#1B2436] text-white p-10 rounded-lg  lg:h-[340px] text-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 border-[1px] duration-300"
             >
               <p>
                 <i className="fa-solid fa-code text-5xl text-white mb-2 -mt-5"></i>
               </p>
               <h1 className="text-lg font-bold mb-3">{service.name}</h1>
-              <p className="text-sm">{service.description}</p>
+              <p className="text-[15px]">{service.description}</p>
             </div>
           ))}
         </div>

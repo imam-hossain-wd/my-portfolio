@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='-mt-3'>
-        <p className="text-md">Copyright © 2023 - All right reserved by Imam Hossain</p>
+        <p className="text-md">Copyright © 2022 - All right reserved by Imam Hossain</p>
       </div>
     </footer>
   );

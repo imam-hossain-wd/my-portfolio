@@ -12,10 +12,12 @@ import image1 from "../../../assets/images/banner.png";
 import "./home.css";
 import textMorphAnimation from "./textMorphAnimation";
 
-const Home = ({openDrawer}) => {
+const Home = ({ openDrawer }) => {
+
   useEffect(() => {
     textMorphAnimation();
   }, []);
+
   return (
     <div >
       <section
@@ -23,19 +25,21 @@ const Home = ({openDrawer}) => {
         className="flex flex-col-reverse md:flex-col-reverse lg:flex-row justify-around items-center"
       >
         <div className="mt-16 lg:mt-40">
-          <h3 className="mb-5 text-xl text-white italic">Hello , I'm</h3>
+          <div className="">
+            <p className="mb-5 line-1 anim-typewriter hello-text text-xl text-white italic">Hello , I'm</p>
 
-          <p className="line-1 anim-typewriter text-white text-4xl italic">
-            Imam Hossain
-          </p>
+            <p className="line-1  anim-typewriter name font-bold text-white text-4xl italic">
+              Imam Hossain
+            </p>
 
-          <h1 className="line-1 anim-typewriter full-stack text-white italic mt-2">
-            Full Stack Web developer
-          </h1>
+            <h1 className="line-1 text-2xl font-bold anim-typewriter full-stack text-white italic mt-2">
+              Full Stack Web developer
+            </h1>
+          </div>
           <div>
             <div
               id="container"
-              className="mt-10 w-60 h-20 italic text-3xl font-extrabold bg-clip-text bg-gradient-to-r from-purple-700 to-pink-700"
+              className="mt-10  w-60 h-20 italic text-3xl font-extrabold bg-clip-text bg-gradient-to-r from-purple-700 to-pink-700"
             >
               <span className="text-white" id="text1"></span>{" "}
               <span id="text2"></span>
@@ -57,7 +61,7 @@ const Home = ({openDrawer}) => {
               className="cool-link border border-white h-8 text-white rounded-sm fond-semi-bold  hover:border-0 w-40 mr-2 mb-2 transition delay-150 transform"
             >
               <Link
-              target="_blank"
+                target="_blank"
                 className="text-white "
                 to="https://drive.google.com/file/d/1E79kAJf3xrYDEHkW4PZ8__1siv1ON_Ns/view?usp=sharing"
               >
@@ -68,7 +72,7 @@ const Home = ({openDrawer}) => {
               className="cool-link border border-white h-8  rounded-sm text-white  fond-semi-bold w-40 hover:border-0 mr-2 mb-2 transition delay-150 transform"
             >
               <Link
-              target="_blank"
+                target="_blank"
                 className="text-white"
                 to="https://drive.google.com/file/d/1FONplcQKb1agIQ09nGou5A8bMqzYs5yf/view?usp=sharing"
               >
@@ -79,8 +83,9 @@ const Home = ({openDrawer}) => {
               className="cool-link -ml-2 lg:-ml-0 border border-white h-8 w-40 hover:border-rose-500 rounded-sm text-white  fond-semi-bold  hover:border-0 mb-2  transition delay-150 transform"
             >
               <Link
+                smooth
                 className="text-white"
-                to="https://drive.google.com/file/d/1HdFj4xgwT92qxT6dTew0auel0b9FN0Ud/view?usp=sharing"
+                to="#contact"
               >
                 Talk With me
               </Link>

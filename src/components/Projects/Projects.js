@@ -34,7 +34,7 @@ const Projects = () => {
         </h1>
       </div>
 
-      <div className="flex mb-5 ml-5">
+      <div className="flex flex-wrap items-center justify-center mb-5 ml-5 lg:ml-16">
         <Button
           onClick={() => setActiveSkills("frontend")}
           isActive={activeSkills === "frontend"}
@@ -73,7 +73,7 @@ const Projects = () => {
         />
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid sm:grid-cols-1 w-[75%] lg:w-[90%] mx-auto md:grid-cols-2 lg:grid-cols-4 gap-10">
         {categoryProjects &&
           categoryProjects.map((project) => (
             <div className="card w-full" key={project.id}>

@@ -12,14 +12,16 @@ const MainHome = () => {
     const [openDrawer, setOpenDrawer]= useState(false)
     return (
         <>
-        <Navbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer}/>
-            <Home  openDrawer={openDrawer}/>
+            <Navbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer}/> 
+             <Home  openDrawer={openDrawer}/>
+            {/* <Navbar />
+            <Home /> */}
             <WelcomeSection />
-            <AboutMe/>
+            <AboutMe />
             <Services />
             <MySkills />
             <Projects />
-            <Contact />            
+            <Contact />
         </>
     );
 };

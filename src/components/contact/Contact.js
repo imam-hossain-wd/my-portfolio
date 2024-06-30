@@ -3,11 +3,11 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section scroll-smooth id="contact" className="my-12 w-[90%] mx-auto">
+    <section scroll-smooth id="contact" className="my-12 w-[95%] mx-auto">
       <h1 className="text-4xl text-white font-bold text-center mb-10">
         Contact Me
       </h1>
-      <div className="flex  flex-col lg:flex-row justify-around">
+      <div className="flex w-[90%] lg:w-full mx-auto  flex-col lg:flex-row justify-around">
         <div>
           <p className="text-white text-xl text-center">Contact Information</p>
           <div
@@ -32,9 +32,9 @@ const Contact = () => {
               <p className="text-2xl ml-2 rounded-full">
                 <FaEnvelope />
               </p>
-              <div className="text-xl ml-8 ">
+              <div className="text-xl ml-6 ">
                 <p>Send Mail</p>
-                <p>imamhossain6t9@gmail.com</p>
+                <p className="text-">imamhossain6t9@gmail.com</p>
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-[600px]">
-          <p className="text-center text-white text-lg">Send Me A Message</p>
+        <div className="w-full lg:w-[600px] lg:-mt-7">
+          <p className="text-center text-white my-5 font-bold text-lg">Send Me A Message</p>
           <ContactForm size="200px" />
         </div>
       </div>

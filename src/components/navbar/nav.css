@@ -4,10 +4,16 @@ li{
     
 }
 
+.nav-drawer-menu{
+  margin-bottom: 10px !important;
+  
+}
+
 .cool-link {
     display: inline-block !important ;
     color: white !important ;
     text-decoration: none ;
+    
   }
   
   .cool-link::after {
@@ -15,7 +21,8 @@ li{
     display: block;
     width: 0;
     height: 2px;
-    background: orangered ;
+    background: red;
+    /* background: orangered ; */
     transition: width .3s;
   }
   
@@ -23,4 +30,10 @@ li{
     width: 100% ;
     transition: width .3s;
   }
+/* .cool-link.active {
+  color: orangered !important;
+} */
 
+.cool-link.active::after {
+  width: 100%;
+}

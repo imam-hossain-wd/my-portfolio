@@ -29,7 +29,7 @@ const WelcomeSection = () => {
   return (
     <div id="welcome" className="scroll-smooth">
       <section className="mt-10 text-white">
-        <h1 className="text-center text-3xl  font-bold ">
+        <h1 className="text-center text-3xl   font-bold ">
           Step into My Digital Realm
         </h1>
         <p className="text-center mt-3  text-lg lg:text-xl mb-10">
